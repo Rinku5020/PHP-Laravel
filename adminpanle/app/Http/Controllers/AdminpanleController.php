@@ -71,7 +71,7 @@ class AdminpanleController extends Controller
 
         $adminpanle->save();
 
-        $message = $id ? 'User updated is successfully.' : 'User created successfully.';
+        $message = $id ? 'User updated successfully.' : 'User created successfully.';
         return redirect()->route('table.show')->with('success', $message);
     }
 
